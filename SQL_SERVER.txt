@@ -1,7 +1,0 @@
-INSTANCE NAME > SQLEXPRESS
-CONNECTION STRING > Server=localhost\SQLEXPRESS;Database=master;Trusted_Connection=True;
-
-SQL ADMIN > DESKTOP_EKEHQG0\Vipin_Singh
-SQL SERVER LOF FOLDER > C:\Program Files\Microsoft SQL Server\150\Setup Bootstrap\Log\20210127_152555
-
-
