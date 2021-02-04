@@ -1,0 +1,186 @@
+Problem 1 : Replace number of white spaces to 1 in a sentence
+	Input : This            is   my book
+	Output : This is my book
+
+Solution 1 :
+
+class Program
+    {
+        static void Main(string[] args)
+        {
+            Console.WriteLine("Enter String : ");
+            string str = Console.ReadLine();
+            Console.WriteLine(String.Join(" ", str.Split(new string[] { " " }, StringSplitOptions.RemoveEmptyEntries)));
+        }
+    }
+
+Problem 2 : Write a program to insert elements in an integer array. Elements should be in order.
+
+Solution 2 : 
+
+class Program
+    {
+        static void Main(string[] args)
+        {
+            int[] array = new int[10];
+            Console.WriteLine("Enter Elements of Array");
+            for (int i = 0; i < array.Length; i++)
+            {
+                array[i] =  Convert.ToInt32(Console.ReadLine());
+            }
+            foreach (int i in array)
+            {
+                Console.WriteLine(i);
+            }
+            Console.ReadKey();
+    }
+
+Problem 3 : Write a program to delete elements from an integer array. 
+
+---Solution 3 :
+
+class Program
+    {
+        static void Main(string[] args)
+        {
+            int[] array = new int[10] ;
+            Console.WriteLine("Enter Elements of Array");
+            for (int i = 0; i < array.Length; i++)
+            {
+                array[i] =  Convert.ToInt32(Console.ReadLine());
+            }
+            foreach (int i in array)
+            {
+                Console.WriteLine(i);
+            }
+    }
+
+Problem 4 : Print sum and average of elements of an Array.
+
+Solution 4 :
+
+class Program
+    {
+        static void Main(string[] args)
+        {
+            int[] array = new int[10];
+            Console.WriteLine("Enter Elements of Array");
+            for (int i = 0; i < array.Length; i++)
+            {
+                array[i] = Convert.ToInt32(Console.ReadLine());
+            }
+            int sum = 0;
+            foreach (int i in array)
+            {
+                sum += i;
+            }
+            Console.WriteLine("Sum of array : {0}",sum);
+            Console.ReadKey();
+        }
+    }
+
+Problem 5 : WAP to display sum of 3 by 3 matrices
+
+Solution 5 :
+
+class Program
+    {
+        static void Main(string[] args)
+        {
+            int[,] matrix = new int[3, 3] { { 1,2,3 },{ 4,5,6 },{ 7,8,9 } };
+            int sum = 0;
+            for(int i=0;i<3;i++)
+            {
+                for (int j = 0; j < 3; j++)
+                {
+                    sum += matrix[i,j];
+                }
+            }
+            Console.WriteLine("Sum of Matrix : {0}",sum);
+            Console.ReadKey();
+        }
+    }
+
+Problem 6 : WAP to find the maximum element of an integer Array.
+
+Solution 6 :
+
+class Program
+    {
+        static void Main(string[] args)
+        {
+            int[] array = new int[10] {1,2,3,4,5,6,7,8,9,10};
+            int max = array[0];
+            for(int i=0;i<array.Length;i++)
+            {
+                if (array[i] > max) { max = array[i]; }
+            }
+            Console.WriteLine("Maximum element of array : {0}",max);
+            Console.ReadKey();
+        }
+    }
+
+Problem 7 : WAP to find the minimum element of an integer Array.
+
+Solution 7 :
+
+class Program
+    {
+        static void Main(string[] args)
+        {
+            int[] array = new int[10] {1,2,3,4,5,6,7,8,9,10};
+            int min = array[0];
+            for(int i=0;i<array.Length;i++)
+            {
+                if (array[i] < max) { max = array[i]; }
+            }
+            Console.WriteLine("Minimum element of array : {0}",min);
+            Console.ReadKey();
+        }
+    }
+
+Problem 8 : WAP to print row wise sum of elements of 2 D Array.
+
+Solution 8 :
+
+class Program
+    {
+        static void Main(string[] args)
+        {
+            int[,] array = new int[3, 3] { { 1, 2, 3 }, { 4, 5, 6 }, { 7, 8, 9 } };
+            int[] rsum = new int[3];
+            for(int i=0;i<3;i++)
+            {
+                rsum[i] = 0;
+                for(int j=0;j<3;j++)
+                {
+                    rsum[i] += array[i,j];
+                }
+            }
+            Console.WriteLine("Row wise sum of array : {0} {1} {2}",rsum[0],rsum[1],rsum[2]);
+            Console.ReadKey();
+        }
+    }
+
+Problem 9 : WAP to print column wise sum of elements of 2 D Array.
+
+Solution 9 :
+
+class Program
+    {
+        static void Main(string[] args)
+        {
+            int[,] array = new int[3, 3] { { 1, 2, 3 }, { 4, 5, 6 }, { 7, 8, 9 } };
+            int[] csum = new int[3];
+            for(int i=0;i<3;i++)
+            {
+                csum[i] = 0;
+                for(int j=0;j<3;j++)
+                {
+                    csum[i] += array[j,i];
+                }
+            }
+            Console.WriteLine("Row wise sum of array : {0} {1} {2}",csum[0],csum[1],csum[2]);
+            Console.ReadKey();
+        }
+    }
